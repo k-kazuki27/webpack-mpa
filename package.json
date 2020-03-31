@@ -1,0 +1,37 @@
+{
+  "name": "webpack-mpa",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode=development",
+    "build": "rm -rf ./dist && webpack --config webpack.config.js --mode=production && cp -r src/assets/icons dist/assets/icons",
+    "submit": "npm run build && node ./submit.js",
+    "format:check": "prettier --no-semi true --single-quote true --check \"src/**/*{.ts,.js,.json,.css,.scss,.html}\"",
+    "format:write": "npm run format:check -- --write",
+    "lint": "eslint src/**/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^3.3.0",
+    "eslint": "^6.8.0",
+    "file-loader": "^4.3.0",
+    "fs-extra": "^8.1.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-inline-source-plugin": "0.0.10",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "prettier": "^1.19.1",
+    "replace-in-file": "^4.2.0",
+    "style-loader": "^1.0.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^2.3.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}

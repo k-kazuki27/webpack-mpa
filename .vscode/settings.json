@@ -1,0 +1,11 @@
+{
+  "typescriptHero.imports.organizeOnSave": true,
+  "typescriptHero.imports.insertSemicolons": false,
+  "typescriptHero.imports.multiLineWrapThreshold": 120,
+  "typescriptHero.imports.multiLineTrailingComma": false,
+  "editor.formatOnSave": true,
+  "workbench.colorCustomizations": {},
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  }
+}

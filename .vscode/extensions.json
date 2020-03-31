@@ -1,0 +1,14 @@
+{
+  // See http://go.microsoft.com/fwlink/?LinkId=827846
+  // for the documentation about the extensions.json format
+  "recommendations": [
+    // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+    "johnpapa.angular-essentials",
+    "steoates.autoimport",
+    "christian-kohler.path-intellisense",
+    "rbbit.typescript-hero",
+    "firsttris.vscode-jest-runner",
+    "visualstudioexptteam.vscodeintellicode",
+    "dbaeumer.vscode-eslint"
+  ]
+}
